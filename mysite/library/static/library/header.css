@@ -1,0 +1,60 @@
+body {
+    margin:0px
+}
+
+img {
+width: 125px;
+}
+
+header {
+    display: block; 
+    height: 405px; 
+    background: url(images/header-bg.png) no-repeat center bottom;
+    align-items: center;
+}
+
+p {  
+    padding: 10px;
+    font-size: 40px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.poisk {
+    text-decoration: none;
+    color: #000;
+    border: 2px solid grey;
+    padding: 10px;
+    background-color: #b6ad87;
+    font-size: 30px;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 250px;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Genres{
+    border-left: 2px solid grey;
+    height: 100px;
+}
+
+.Genres a{
+    text-decoration: none;
+    color: #000;
+    border: 2px solid grey;
+    padding: 10px;
+    background-color: #b6ad87;
+    font-size: 30px;
+    width: 500px;
+    text-align: center;
+}
+
+.iconka {
+    width: 150px;
+}
