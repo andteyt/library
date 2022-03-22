@@ -8,7 +8,7 @@ def results(request, question_id):
     return render(request, 'polls/results.html', {'question': question})
 
 def book(request):
-    return render(request, 'library/index2.html')
+    return render(request, 'library/book.html')
 
 def Genres(request):
     return render(request, 'library/autors.html')
