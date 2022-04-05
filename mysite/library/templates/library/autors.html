@@ -1,5 +1,30 @@
 {% extends "library/base.html" %}
 
+
 {% block main %}
-здесь все об авторах
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h1> автор {{author.name}} {{book.authors.surname}} {{book.authors.patronymic}}</h1>
+    <p>{{author.biography}}</p>
+     {% if books %}
+    <ul>
+    {% for book in books %}
+        <li><a href="/books/{{ book.id }}/">{{ book.title }}</a>
+            <p> {{ book.year }} </p>
+        </li>
+
+    {% endfor %}
+    </ul>
+ {% else %}
+    <p>Книги не найдены</p>
+{% endif %}
+</div>
+</body>
+</html>
 {% endblock  %}

@@ -41,7 +41,7 @@ p {
 
 .Genres{
     border-left: 2px solid grey;
-    height: 100px;
+    height: 150px;
 }
 
 .Genres a{
@@ -53,6 +53,7 @@ p {
     font-size: 30px;
     width: 500px;
     text-align: center;
+    height: 150px;
 }
 
 .iconka {

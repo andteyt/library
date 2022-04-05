@@ -1,9 +1,27 @@
-{% if latest_question_list %}
+   {% block main %}
+   {% if author %}
     <ul>
-    {% for question in latest_question_list %}
-        <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
+    {% for aut in author %}
+        <li><a href="/author/{{ aut.id }}/">{{ aut.name }} {{ aut.surname }} {{ aut.patronymic }}</a>
+            <p> {{ aut.biography }}</p>
+        </li>
+
     {% endfor %}
     </ul>
-{% else %}
-    <p>No polls are available.</p>
+    {% else %}
+        <p>Авторы не найдены</p>
+    {% endif %}
+  {% if books %}
+    <ul>
+    {% for book in books %}
+        <li><a href="/books/{{ book.id }}/">{{ book.title }}</a>
+            <p>{{ book.author}} {{ book.publication_house }} {{ book.year }} </p>
+        </li>
+
+    {% endfor %}
+    </ul>
+ {% else %}
+    <p>Книги не найдены</p>
 {% endif %}
+   {% block main %}
+
