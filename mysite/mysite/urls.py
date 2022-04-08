@@ -8,7 +8,7 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-
-    path('book', views.book)
-
+    path('book/<int:book_id>/', views.book),
+    path('', views.index),
+    path('author/<int:author_id>/', views.author),
 ]

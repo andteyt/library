@@ -1,5 +1,4 @@
 {% load static %}
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css"  href="{% static '/library/header.css' %}">
@@ -13,7 +12,7 @@
     {% block header %}
     <header>
         <div class="flex">
-            <img class="static/library/iconka.gif" src="иконка.gif" >
+            <img class="iconka.gif" src="иконка.gif" >
             <a href="" class=poisk> поиск</a>
             <p>название сайта </p>
             <div class="Genres">
@@ -24,6 +23,10 @@
     </header>
 
     {% endblock %}
+
+    {% block main %}
+
+    {% endblock  %}
 
     {% block footer%}
     <div>подвал</div>

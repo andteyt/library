@@ -1,10 +1,13 @@
 {% extends "library/base.html" %}
 
 {% block main %}
-
-    <p> книга {{book.title}}</p>
+<div class="">
+    <div>
+        <h1> {{book.title}} </h1>
+    </div>
     <img src="">
      <p><a href="//author/{{book.authors.id}}"> {{book.authors.name}} {{book.authors.surname}} {{book.authors.patronymic}}</a></p>
      <p>{{book.year}}</p>
      <p>{{book.publication_house}}</p>
+</div>
 {% endblock  %}
