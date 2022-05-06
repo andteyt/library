@@ -1,0 +1,22 @@
+{% extends "library/base.html" %}
+
+
+{% block main %}
+<div>
+    <h1 class="author_name"> автор {{author.name}} {{book.authors.surname}} {{book.authors.patronymic}}</h1>
+    <p1 class="biography">{{author.biography}}</p1>
+     {% if books %}
+    <div>
+    {% for book in books %}
+        <div>
+            <a href="/books/{{ book.id }}/">{{ book.title }}</a>
+            <p> {{ book.year }} </p>
+        </div>
+
+    {% endfor %}
+    </div>
+ {% else %}
+    <p>Книги не найдены</p>
+{% endif %}
+</div>
+{% endblock  %}
