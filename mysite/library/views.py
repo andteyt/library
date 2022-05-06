@@ -16,7 +16,7 @@ def Genres(request):
 
 def author(request,author_id):
     author = Authors.objects.get(pk=author_id)
-    books = Books.objects.filter(Authors=author_id)
+    books = Books.objects.filter(authors=author_id)
     context = {'Author': author, 'books': books}
     return render(request, 'library/author.html', context)
 

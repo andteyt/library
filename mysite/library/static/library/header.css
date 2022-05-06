@@ -18,6 +18,7 @@ p {
     font-size: 40px;
     margin-left: 1%;
     margin-right: 1%;
+    height: 300px;
 }
 
 .poisk {
@@ -39,15 +40,8 @@ p {
     justify-content: space-around;
 }
 
-.Genres{
-    border-left: 2px solid grey;
-    height: 150px;
-}
-
 .Genres a{
     text-decoration: none;
-    color: #000;
-    border: 2px solid grey;
     padding: 10px;
     background-color: #b6ad87;
     font-size: 30px;
@@ -61,7 +55,17 @@ p {
 }
 
 .book div {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex1{
+    display: flex;
+    align-items: left;    
+    display: block;
+}
+
+.nazvanie{
+    height: 300px;
 }
