@@ -1,6 +1,19 @@
 {% extends "library/base.html" %}
 
 {% block main %}
+<h1>Название книги</h1>  
+
+  <div class="книги">
+    <div class="описание">
+        <a href="//author/{{book.authors.id}}"><p>{{book.authors.name}}</p>
+        <p>{{book.authors.surname}} {{book.authors.patronymic}}</p></a>
+        <p>{{book.year}}</p>
+        <p>{{book.publication_house}}</p>
+    </div>
+    <div>
+        <img src= https://img-gorod.ru/26/786/2678615_detail.jpg alt="">
+    </div> 
+
 <div class="">
     <div>
         <h1> {{book.title}} </h1>
