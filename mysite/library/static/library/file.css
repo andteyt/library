@@ -1,0 +1,32 @@
+body {
+background-color:#FFFFF5
+}
+
+h1 {
+    text-align: center; 
+    margin-top: 50px;
+}
+
+p {
+  font-size: 30px;  
+}
+    
+
+.книги{
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.книги div {
+    margin: 60px; 
+}
+div img {
+    margin: 100px; 
+}
+.описание{
+    display: flex;
+
+    flex-direction: column;
+}
