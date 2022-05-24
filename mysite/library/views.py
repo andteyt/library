@@ -6,7 +6,7 @@ from .models import *
 def index(request):
     author = Authors.objects.all()  #select_related(id)
     book = Books.objects.all()
-    context = {'author': author, 'books': book}
+    context = {'authors': author, 'books': book}
     return render(request, 'library/index.html', context)
 
 def Genres(request):
@@ -17,7 +17,7 @@ def Genres(request):
 def author(request,author_id):
     author = Authors.objects.get(pk=author_id)
     books = Books.objects.filter(authors=author_id)
-    context = {'Author': author, 'books': books}
+    context = {'author': author, 'books': books}
     return render(request, 'library/author.html', context)
 
 def book(request,book_id):

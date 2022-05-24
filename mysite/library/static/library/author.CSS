@@ -1,4 +1,12 @@
-.author_name
+.biography
 {
-   text-align: center;
-   }
+ 
+}
+.biography h2
+{
+    text-align: center;
+}
+.bio img
+{
+    width: 450px;
+}

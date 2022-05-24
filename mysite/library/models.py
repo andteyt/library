@@ -2,11 +2,12 @@ from django.db import models
 
 # Create your models here.
 class Authors(models.Model):
-    biography = models.CharField(max_length=5000)
+    biography = models.TextField()
     name = models.CharField(max_length=15)
     surname = models.CharField(max_length=30)
     patronymic = models.CharField(max_length=20)
-
+    img = models.ImageField(upload_to='img/author',
+                      height_field=100, width_field=100)
 class Genres(models.Model):
     title = models.CharField(max_length=30)
 
