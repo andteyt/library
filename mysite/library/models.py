@@ -1,6 +1,9 @@
 from django.db import models
 
 # Create your models here.
+
+
+
 class Authors(models.Model):
     biography = models.TextField()
     name = models.CharField(max_length=15)
@@ -17,5 +20,3 @@ class Books(models.Model):
     year = models.IntegerField(max_length=4)
     publication_house = models.CharField(max_length=15)
     Genres = models.ManyToManyField(Genres)
-
-
