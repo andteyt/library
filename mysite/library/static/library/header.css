@@ -13,8 +13,7 @@ h1 {
 }
 
 header {
-    display: block; 
-    height: 405px; 
+    display: block;
     background: url(images/header-bg.png) no-repeat center bottom;
     align-items: center;
 }
