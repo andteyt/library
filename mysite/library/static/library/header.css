@@ -22,8 +22,7 @@ header {
 p {  
     padding: 10px;
     font-size: 40px;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-top: 0px;
 }
 
 .poisk {
@@ -53,7 +52,7 @@ p {
     width: 200px;
     float: left;
     height: 80px;
-    margin: top 0px; ;
+    margin-top: 0px; 
 }
 
 .book div {
@@ -86,4 +85,8 @@ p {
 .описание{
     display: flex;
     flex-direction: column;
+}
+
+hr {
+    margin-top: 0px;
 }
