@@ -9,7 +9,7 @@ class Authors(models.Model):
     name = models.CharField(max_length=15)
     surname = models.CharField(max_length=30)
     patronymic = models.CharField(max_length=20)
-    img = models.ImageField(upload_to='img/author')
+    img = models.ImageField(upload_to='static/img/author')
 
 class Genres(models.Model):
     title = models.CharField(max_length=30)
