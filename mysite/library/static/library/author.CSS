@@ -1,12 +1,9 @@
-.biography h2
-{
-    text-align: center;
-}
-.bio img
+
+.pic
 {
     width: 450px;
 }
 .wid
 {
-    background-color: FFFFF5;
+    background-color: #ede1cf;
 }

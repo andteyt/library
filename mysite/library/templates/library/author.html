@@ -1,22 +1,23 @@
 {% extends "library/base.html" %}
-
+{% load static %}
 
 {% block main %}
 <div class="wid">
     <h1 class="author_name"> автор {{author.name}} {{author.surname}} {{author.patronymic}}</h1>
     <div class="flex bio">
-        <img src="https://klike.net/uploads/posts/2019-06/1560329641_2.jpg">
         <div class="biography">
             <h2 >Биография  </h2>
             <p>{{author.biography}}</p>
         </div>
+        <img src="{% static author.img.url %}">
+
     </div>
 
      {% if books %}
     <div>
     {% for book in books %}
-        <div>
-            <a href="/books/{{ book.id }}/">{{ book.title }}</a>
+        <div class="">
+            <a href="/book/{{ book.id }}/">{{ book.title }}</a>
             <p> {{ book.year }} </p>
         </div>
 
