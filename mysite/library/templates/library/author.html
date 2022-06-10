@@ -9,16 +9,17 @@
             <h2 >Биография  </h2>
             <p>{{author.biography}}</p>
         </div>
-        <img src="{% static author.img.url %}">
-
+        <div >
+        <img class="photo" src="{% static author.img.url %}">
+        </div>
     </div>
 
      {% if books %}
-    <div>
+    <div class="books">
     {% for book in books %}
-        <div class="">
+        <div class="book">
             <a href="/book/{{ book.id }}/">{{ book.title }}</a>
-            <p> {{ book.year }} </p>
+
         </div>
 
     {% endfor %}

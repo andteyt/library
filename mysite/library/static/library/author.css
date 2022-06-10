@@ -1,0 +1,24 @@
+
+.wid
+{
+    background-color: #ede1cf;
+}
+.biography
+{
+
+}
+.book a
+{
+    font-size:20px;
+    text-decoration:none;
+}
+.photo
+{
+    width:400px;
+}
+.books{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+
+}
