@@ -13,15 +13,16 @@ h1 {
 }
 
 header {
-    display: block;
+    display: block; 
+    height: 405px; 
     background: url(images/header-bg.png) no-repeat center bottom;
     align-items: center;
 }
 
 p {  
-    padding: 10px;
     font-size: 40px;
     margin-top: 0px;
+    margin-left: 10px;
 }
 
 .poisk {
@@ -50,7 +51,7 @@ p {
 .iconka {
     width: 200px;
     float: left;
-    height: 80px;
+    height: 170px;
     margin-top: 0px; 
 }
 
@@ -67,7 +68,7 @@ p {
 
 .flex{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin:0px;
 }
 
@@ -88,4 +89,40 @@ p {
 
 hr {
     margin-top: 0px;
+}
+
+.biography h2
+{
+    text-align: center;
+}
+.bio img
+{
+    width: 450px;
+}
+.wid
+{
+    background-color: FFFFF5;
+}
+.img_book{
+margin-right: 50px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #b6ad87;
+}
+.dropbtn {
+    background-color: #b6ad87;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
