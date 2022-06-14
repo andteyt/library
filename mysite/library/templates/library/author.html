@@ -19,9 +19,10 @@
     {% for book in books %}
         <div class="book">
             <a href="/book/{{ book.id }}/">{{ book.title }}</a>
-
+            <div>
+                <img class="book" src="{{book.img.url }}">
+            </div>
         </div>
-
     {% endfor %}
     </div>
  {% else %}
