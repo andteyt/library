@@ -18,4 +18,4 @@ class Books(models.Model):
     year = models.IntegerField(max_length=4)
     publication_house = models.CharField(max_length=15)
     Genres = models.ManyToManyField(Genres)
-    img = models.ImageField(upload_to= '/static/img/book')
+    img = models.ImageField(upload_to= 'static/img/book')
