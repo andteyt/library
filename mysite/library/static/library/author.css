@@ -22,9 +22,15 @@
     border-style: solid;
     border-color: #CD9575;
 }
-.books{
+.books
+{
     display: flex;
     flex-wrap:wrap;
     justify-content: space-around;
 
+}
+.author name
+{
+     margin-top:0px;
+     padding-top:50px;
 }
