@@ -49,9 +49,9 @@ p {
 }
 
 .iconka {
-    width: 200px;
+    width: 150px;
     float: left;
-    height: 170px;
+    height: 130px;
     margin-top: 0px; 
 }
 
@@ -64,12 +64,16 @@ p {
     align-items: left;    
     display: block;
     margin:0px;
+    background-color: #b6ad87;
 }
 
+
 .flex{
+    height: 130px;
     display: flex;
     justify-content: space-between;
     margin:0px;
+    background-color: #b6ad87;
 }
 
 .книги{
@@ -89,7 +93,10 @@ p {
 
 hr {
     margin-top: 0px;
+    height: 0.5;
+    background-color: gray;
 }
+
 
 .biography h2
 {
@@ -106,23 +113,50 @@ hr {
 .img_book{
 margin-right: 50px;
 }
-.dropdown-content {
+form {
+    width: 100px;
+}
+
+
+
+
+#navbar ul{
     display: none;
+    background-color: #f90;
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    top: 100%;
+  }
+  #navbar li:hover ul { display: block; }
+  #navbar, #navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  #navbar {
+    height: 30px;
+    background-color: #666;
+    padding-left: 25px;
+    min-width: 470px;
+  }
+  #navbar li {
+    float: left;
+    position: relative;
+    height: 100%;
+  }
+  #navbar li a {
+    display: block;
+    padding: 6px;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+  }
+  #navbar ul li { 
+    float: none;
+ }
+  #navbar li:hover { 
+    background-color: #f90; 
 }
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #b6ad87;
-}
-.dropbtn {
-    background-color: #b6ad87;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+  #navbar ul li:hover { 
+    background-color: #666; 
 }
