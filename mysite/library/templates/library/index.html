@@ -13,14 +13,15 @@
         <p>Авторы не найдены</p>
     {% endif %}
   {% if books %}
-    <ul>
+    <div class="книги">
     {% for book in books %}
-        <li><a href="/book/{{ book.id }}/">{{ book.title }}</a>
-            <p>{{ book.author}} {{ book.publication_house }} {{ book.year }} </p>
-        </li>
+              <div>
+        <a href="/book/{{ book.id }}/">{{ book.title }}</a>
+        <p>{{ book.author}} {{ book.publication_house }} {{ book.year }} </p>
+          </div>
 
     {% endfor %}
-    </ul>
+   </div>
  {% else %}
     <p>Книги не найдены</p>
 {% endif %}

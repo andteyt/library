@@ -1,5 +1,14 @@
 {% extends "library/base.html" %}
 
 {% block main %}
-здесь книги по жанрам
+{% if books %}
+    <div class="книги">
+    {% for book in books %}
+              <div>
+        <a href="/book/{{ book.id }}/">{{ book.title }}</a>
+        <p>{{ book.author}} {{ book.publication_house }} {{ book.year }} </p>
+          </div>
+
+    {% endfor %}
+   </div>
 {% endblock  %}

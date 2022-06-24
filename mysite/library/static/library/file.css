@@ -1,6 +1,5 @@
 body {
-background-color:#FFFFF5
-}
+background-color:#FFFCEF
 
 h1 {
     text-align: center; 
@@ -20,7 +19,8 @@ p {
     justify-content: space-around;
 }
 .книги div {
-    margin: 60px; 
+    margin: 60px;
+
 }
 div img {
     margin: 100px; 
@@ -29,4 +29,14 @@ div img {
     display: flex;
 
     flex-direction: column;
+
 }
+.books_p{
+
+font-size: 70px;
+}
+
+.div{
+ text-align=wright
+}
+
