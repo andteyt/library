@@ -59,6 +59,7 @@ p {
 
 .flex{
     display: flex;
-    align-items: center;
+    alin-items: center;
     justify-content: space-around;
+
 }

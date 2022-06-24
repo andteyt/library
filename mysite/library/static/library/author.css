@@ -1,0 +1,36 @@
+
+.wid
+{
+    background-color: #ede1cf;
+}
+.biography
+{
+  text-indent: 20px;
+}
+.book
+{
+    font-size:20px;
+    text-align: center;
+}
+.book a
+{
+    text-decoration:none;
+}
+.photo
+{
+    width:400px;
+    border-style: solid;
+    border-color: #CD9575;
+}
+.books
+{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+
+}
+.author name
+{
+     margin-top:0px;
+     padding-top:50px;
+}
