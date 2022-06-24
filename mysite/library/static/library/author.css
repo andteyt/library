@@ -6,6 +6,7 @@
 .biography
 {
   text-indent: 20px;
+  width:60%;
 }
 .book
 {
@@ -29,8 +30,11 @@
     justify-content: space-around;
 
 }
-.author name
+.author_name
 {
      margin-top:0px;
      padding-top:50px;
+}
+book img {
+     margin-top:15px;
 }
