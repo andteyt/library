@@ -22,9 +22,7 @@ p {
 .книги div {
     margin: 60px; 
 }
-div img {
-    margin: 100px; 
-}
+
 .описание{
     display: flex;
 
