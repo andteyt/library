@@ -1,14 +1,6 @@
 {% extends "library/base.html" %}
    {% block main %}
-   {% if authors %}
-    <div class="flex">
-    {% for aut in authors %}
-        <a href="/author/{{ aut.id }}/">{{ aut.name }} {{ aut.surname }} {{ aut.patronymic }}</a>
-    {% endfor %}
-    </div>
-    {% else %}
-        <p>Авторы не найдены</p>
-    {% endif %}
+
   {% if books %}
      <div class="books">
     {% for book in books %}
