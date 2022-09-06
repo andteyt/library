@@ -14,7 +14,6 @@ h1 {
 
 header {
     display: block; 
-    height: 405px; 
     background: url(images/header-bg.png) no-repeat center bottom;
     align-items: center;
 }
@@ -159,4 +158,7 @@ form {
 }
   #navbar ul li:hover { 
     background-color: #666; 
+}
+.nap {
+    width: 170px;
 }
