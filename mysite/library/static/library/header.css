@@ -70,7 +70,6 @@ p {
 .flex{
     height: 130px;
     display: flex;
-    justify-content: space-between;
     margin:0px;
     background-color: #b6ad87;
 }
@@ -133,9 +132,8 @@ form {
   }
   #navbar {
     height: 30px;
-    background-color: #666;
+    background-color: #b6ad87;
     padding-left: 25px;
-    min-width: 470px;
   }
   #navbar li {
     float: left;
@@ -160,5 +158,6 @@ form {
     background-color: #666; 
 }
 .nap {
-    width: 170px;
+    margin-left: 500px;
+    margin-top: 50;
 }
