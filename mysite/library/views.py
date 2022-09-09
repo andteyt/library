@@ -10,7 +10,7 @@ def index(request):
     return render(request, 'library/index.html', context)
 
 def Genres(request):
-    genres = Genres.objects.select_related(id)
+    genres = Genres.objects.all()
     context = {'Genres': genres}
     return render(request, 'library/Genres.html', context)
 
