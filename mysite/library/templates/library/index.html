@@ -1,26 +1,19 @@
 {% extends "library/base.html" %}
    {% block main %}
-   {% if authors %}
-    <ul>
-    {% for aut in authors %}
-        <li><a href="/author/{{ aut.id }}/">{{ aut.name }} {{ aut.surname }} {{ aut.patronymic }}</a>
-            <p> {{ aut.biography }}</p>
-        </li>
 
-    {% endfor %}
-    </ul>
-    {% else %}
-        <p>Авторы не найдены</p>
-    {% endif %}
   {% if books %}
-    <ul>
+     <div class="books">
     {% for book in books %}
-        <li><a href="/books/{{ book.id }}/">{{ book.title }}</a>
-            <p>{{ book.author}} {{ book.publication_house }} {{ book.year }} </p>
-        </li>
+          <div>
+                <a href="/book/{{ book.id }}/">
+                    <img class="book" src="{{book.img.url }}">
+                </a>
 
+
+
+         </div>
     {% endfor %}
-    </ul>
+    </div>
  {% else %}
     <p>Книги не найдены</p>
 {% endif %}
