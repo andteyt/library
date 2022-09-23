@@ -3,30 +3,32 @@
 
 {% block main %}
 <div class="wid">
-    <h1 class="author_name"> {{author.name}} {{author.surname}} {{author.patronymic}}</h1>
-    <div class="flex bio">
-        <div class="biography">
-            <h2 >Биография  </h2>
-            <p>{{author.biography}}</p>
-        </div>
-        <div >
-        <img class="photo" src="{{author.img.url }}">
-        </div>
-    </div>
- <h1 class="author_name">книги автора:</h1>
-     {% if books %}
-    <div class="books">
-    {% for book in books %}
-       <div class="book img">
-            <a href="/book/{{ book.id }}/">{{ book.title }}</a>
-            <div>
-                <img class="book" src="{{book.img.url }}">
+    <div class="infaauthor">
+       <div>
+            <h1 class="author_name"> {{author.name}} {{author.surname}} {{author.patronymic}}</h1>
+            <div class="biography">
+                <h2 >Биография  </h2>
+                <p style="text-align:center">{{author.biography}}</p>
             </div>
+            <div>
+                <img class="photo" src="{{author.img.url}}">
+            </div>
+       </div>
+        <h1 class="author_name">книги автора:</h1>
+        {% if books %}
+        <div class="books">
+            {% for book in books %}
+                <div class="book img">
+                    <a href="/book/{{ book.id }}/">{{ book.title }}</a>
+                    <div>
+                        <img class="book" src="{{book.img.url }}">
+                    </div>
+                </div>
+                {% endfor %}
         </div>
-    {% endfor %}
     </div>
- {% else %}
+    {% else %}
     <p>Книги не найдены</p>
-{% endif %}
+    {% endif %}
 </div>
 {% endblock  %}
