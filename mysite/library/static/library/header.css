@@ -72,6 +72,8 @@ p {
     display: flex;
     margin:0px;
     background-color: #b6ad87;
+    flex-grow: 1;
+    justify-content:space-around;
 }
 
 .книги{
@@ -133,7 +135,7 @@ form {
   #navbar {
     height: 30px;
     background-color: #b6ad87;
-    padding-left: 25px;
+    padding-left: 0px;
   }
   #navbar li {
     float: left;
@@ -158,6 +160,4 @@ form {
     background-color: #666; 
 }
 .nap {
-    margin-left: 500px;
-    margin-top: 50;
 }
